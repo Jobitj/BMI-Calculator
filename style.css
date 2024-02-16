@@ -1,0 +1,42 @@
+.position1 {
+    /* position: relative; */
+    margin-top: 35px;
+    line-height: 140%;
+    margin-left: 10px;
+}
+
+#btn1{
+    background-color: #B02A30
+    
+}
+#para1{
+    text-align: justify;
+}
+#hed{
+    color: #B02A30;
+}
+
+#yellow {
+    background-color: yellow;
+}
+
+.line {
+    width: 80px;
+    height: 5px;
+    /* border: 1px solid; */
+}
+#clcbtn{
+    background-color: #E77817;
+}
+
+
+
+#green{
+    background-color: green;
+}
+#orange{
+    background-color: orange;
+}
+#red{
+    background-color: red;
+}

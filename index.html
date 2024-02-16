@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid ">
+          <a class="navbar-brand" href="#"><img src="https://www.iciciprulife.com/content/icici-prudential-life-insurance/_jcr_content/headerpar/header_sightly/navHeader.img.png/1686333582909.png" alt=""></a>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent"  style="margin-left: 24%; font-size: 12px;">
+            <form class="d-flex" role="search">
+                <input class="form-control " type="search" placeholder="Search" >
+                <button class="btn" type="submit"><i class="fa-solid fa-magnifying-glass fa-lg" style="color: #e83030;"></i></button>
+              </form>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Careers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Track Application</a>
+              </li>
+              <li>
+                <i class="fa-regular fa-bell fa-2xl mt-3" style="color: #cb2c1a;"></i>
+              </li>
+              <li class="mt-1 ms-3"><button id="btn1" class="border border-0 text-light "><i class="fa-regular fa-user fa-lg ms-2 me-2   " style="color: #ffffff; "></i>LOGIN</button></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+          <div class="container-fluid  " style="background-color: #B02A30;">
+              
+            <div class="collapse navbar-collapse ms-4 text-center" id="navbarSupportedContent" style="font-size: 16px;  ">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Plans
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Term Insurance</a></li>
+                    <li><a class="dropdown-item" href="#">Guaranteed Returns</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Health Insurance</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+            <div class="collapse navbar-collapse text-light" id="navbarSupportedContent">
+                  <a class="nav-link text-light" href="#">Term Insurance</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">Claims</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Library
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Understanding Life Insurance</a></li>
+                    <li><a class="dropdown-item" href="#">Understanding Funds</a></li>
+                    <li><a class="dropdown-item">Testimonials</a></li>
+                    <li><a class="dropdown-item" href="#">FAQS</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">Customer Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">Public Disclosure</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">Tax Centre</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <section>
+
+        <div id="container2" style="background-color: #F1F1F1; " class="container pb-4">
+          <div class="d-flex">
+              <img src="https://www.iciciprulife.com/content/icici-prudential-life-insurance/tools-and-calculators/bmi_assets/images/Component21.svg" alt="">
+              <div class="position1">
+                  <p style="color:#B02A30 ; font-size:40px" class="fw-medium ms-3 ">BMI Calculator</p>
+                  <p style="color: #B02A30;font-size:20px ;" class="ms-3">Body Mass Index</p>
+              </div>
+          </div>
+          <div id="container" style="background-color: white;" class="container pb-4">
+              <div class="row">
+                  <div class="col-4">
+                      <div class="mt-5">
+                          <div class="">
+                              <p class="fw-medium text-secondary">GENDER</p>
+                          </div>
+                          <div id="gender" class="d-flex ">
+                              <button id="male" style="border:.2px solid red ; position: relative;left:15px ;background-color: white;" class="btn  text-secondary fw-semibold ps-5 pe-5 " onclick="gender('Male')" fdprocessedid="qn6er">Male</button>&emsp;
+                              <button id="female" onclick="gender('Female')" style="border:.2px solid gray ;" class="btn  text-secondary fw-semibold ps-5 pe-5" fdprocessedid="qutstg">Female</button>
+                          </div>
+                      </div>
+                      <div class="mt-5">
+                          <p class="fw-medium text-secondary">HEIGHT</p>
+                          <input id="myHeight" class="fw-semibold" style="border:none ;border-bottom:.5px solid ;" type="text" placeholder="CM" fdprocessedid="nestn4">
+                          <p id="hNotify"></p>
+                      </div>
+                  </div>
+                  <div id="col4" class="col-4">
+                      <div class="mt-5">
+                          <p class="fw-medium text-secondary">AGE</p>
+                      </div>
+                      <div>
+                          <input id="age" class="form-control w-50 fw-semibold " placeholder="years" type="text" fdprocessedid="i3k7x8">
+                          <span id="wNotify" style="color: rgb(139, 137, 137);font-weight:600;" class="">between 2 yrs to
+                              120 yrs</span>
+                      </div>
+                      <div class="mt-4">
+                          <p class="fw-medium text-secondary">WEIGHT</p>
+                      </div>
+                      <div>
+                          <input id="myWeigth" class="form-control w-50 fw-semibold text-start" placeholder="in Kgs" type="text" fdprocessedid="fe317c">
+                      </div>
+                      <p id="Noty"></p>
+                  </div>
+                  <div id="loader" class="col-4 p-3" >
+                      <div style="width: 350px ; height:280px ;" class="col-4 bg-body-secondary mt-5">
+                          <div class="pt-5" style="line-height:100% ; margin-top:30px ;">
+                              <p style="color:#B02A30 ;" class="text-center fs-4 fw-medium">Your BMI is</p>
+                              <p id="BMI" class="fs-1 fw-medium text-center">--</p>
+                              <div id="hide" class="d-flex justify-content-around mt-5 ">
+                                  <div id="yellow" class="line">
+                                      <div id="meterBar" style="position: relative; bottom:7px ;font-size: 25px;" class=" fw-bolder">|</div>
+                                  </div>
+                                  <div id="green" class="line"></div>
+                                  <div id="orange" class="line"></div>
+                                  <div id="red" class="line"></div>
+                              </div>
+                              <div id="hide" class="d-flex justify-content-between mt-2 ms-1 me-3">
+                                <div style="font-size: small;" class="fw-bolder text-secondary">Underweight</div>
+                                <div style="font-size: small;" class="fw-bolder text-secondary">Normal</div>
+                                <div style="font-size: small;" class="fw-bolder text-secondary"> Overweight</div>
+                                <div style="font-size: small;" class="fw-bolder text-secondary">Obesity</div>
+                            </div>
+                          </div>
+                          <p id="help" class="fw-bold  text-center mt-2"></p>
+                          <p id="help2" class="text-center fw-medium mb-3"></p>
+  
+                      </div>
+                  </div>
+              </div>
+              <div style="margin-left:350px ;" class="">
+                  <button id="clcbtn" style="padding:12px ;border-radius:30px ;font-weight: bold;" class="btn btn-secondary ps-5 pe-5 " onclick="calcBMR()" fdprocessedid="3jlc3">Calculate</button>
+  
+              </div>
+              <div>
+                  <p class="text-end me-5 fw-bold text-secondary " style="font-style: italic;">Healthy BMI range: 18.5
+                      kg/m2 - 25 kg/m2</p>
+              </div>
+          </div>
+          <script src="./script.js"></script>
+  
+  
+  
+  </div>
+
+      </section>
+      <section>
+        <h3 id="hed"  class="ms-5 mt-5">Introduction to the body mass index (BMI)</h3>
+        <p id="para1" class="ms-5 me-5">Body Mass Index (BMI) is widely used as an indicator of body fat content. Your weight alone is not sufficient to establish if you are in a healthy weight range. For example, a tall but slender person can weigh more than a short but plump individual. But the former may enjoy better health as long as their weight is suitable for their height. The ideal weight is also likely to differ for men and women of similar heights.
+<br><br>
+          How then do you know whether you fall in the healthy weight range or not? Your BMI solves this confusion. It correlates your weight with your height and evaluates whether your weight is appropriate for your stature. You can use a BMI calculator to find out your BMI.
+    <br><br>      
+          Although not an exact measurement of body fat percentage, in most cases, BMI is a reliable tool for establishing risk levels for illnesses, especially ailments related to excess body fat. Many healthcare professionals use BMI to determine effective doses for medicines. Often people with a higher BMI need higher doses. Hence, it is crucial to be aware of your BMI to ensure your overall wellness.</p>
+      </section>
+</body>
+</html>
